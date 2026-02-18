@@ -1,11 +1,20 @@
 import "./nav.css";
 
 export function Nav() {
+  const handleInput = (e) => {
+    console.log("kliknięto: ", e.target.value);
+  };
+
   return (
     <nav>
-      <span>LOGO</span>
+      <span>
+        <i class="fa-brands fa-apple"></i>
+      </span>
 
       <ul>
+        <li>
+          <input placeholder="search" onChange={handleInput}></input>
+        </li>
         <li>
           <i class="fa-solid fa-gauge"></i>
           DASHBOARD
