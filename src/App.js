@@ -42,8 +42,8 @@ function App() {
       <h1 className="animated-title">HELLO {name}!</h1>
 
       <main>
-        {newsList.map((news) => (
-          <News title={news.title} description={news.description}></News>
+        {newsList.map((news, index) => (
+          <News key={index} title={news.title} description={news.description}></News>
         ))}
       </main>
     </>

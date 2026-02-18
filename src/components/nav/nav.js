@@ -8,7 +8,7 @@ export function Nav() {
   return (
     <nav>
       <span>
-        <i class="fa-brands fa-apple"></i>
+        <i className="fa-brands fa-apple"></i>
       </span>
 
       <ul>
@@ -16,15 +16,15 @@ export function Nav() {
           <input placeholder="search" onChange={handleInput}></input>
         </li>
         <li>
-          <i class="fa-solid fa-gauge"></i>
+          <i className="fa-solid fa-gauge"></i>
           DASHBOARD
         </li>
         <li>
-          <i class="fa-solid fa-newspaper"></i>
+          <i className="fa-solid fa-newspaper"></i>
           NEWS
         </li>
         <li>
-          <i class="fa-solid fa-pizza-slice"></i>
+          <i className="fa-solid fa-pizza-slice"></i>
           USERS
         </li>
       </ul>
