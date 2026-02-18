@@ -6,11 +6,17 @@ export function Nav() {
       <span>LOGO</span>
 
       <ul>
-        <li>DASHBOARD</li>
-        <li>NEWS</li>
         <li>
-          {" "}
-          <i class="fa-solid fa-pizza-slice"></i> USERS
+          <i class="fa-solid fa-gauge"></i>
+          DASHBOARD
+        </li>
+        <li>
+          <i class="fa-solid fa-newspaper"></i>
+          NEWS
+        </li>
+        <li>
+          <i class="fa-solid fa-pizza-slice"></i>
+          USERS
         </li>
       </ul>
     </nav>

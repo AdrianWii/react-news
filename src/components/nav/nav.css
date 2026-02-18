@@ -10,3 +10,23 @@ nav {
   align-items: center;
   padding: 1rem;
 }
+
+ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  font-size: 1.25rem;
+  color: white;
+}
+
+ul > li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+ul > li:hover {
+  transform: scale(1.1);
+}
