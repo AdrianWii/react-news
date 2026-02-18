@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./nav.css";
 
 export function Nav() {
@@ -16,8 +17,10 @@ export function Nav() {
           <input placeholder="search" onChange={handleInput}></input>
         </li>
         <li>
-          <i className="fa-solid fa-gauge"></i>
-          DASHBOARD
+          <Link to="/dashboard">
+            <i className="fa-solid fa-gauge"></i>
+            DASHBOARD
+          </Link>
         </li>
         <li>
           <i className="fa-solid fa-newspaper"></i>

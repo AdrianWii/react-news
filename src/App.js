@@ -1,5 +1,6 @@
 import "./App.css";
 import { News } from "./components/news/news";
+import { Nav } from "./components/nav/nav";
 
 function App() {
   const name = "Adrian";
@@ -39,11 +40,16 @@ function App() {
 
   return (
     <>
+
       <h1 className="animated-title">HELLO {name}!</h1>
 
       <main>
         {newsList.map((news, index) => (
-          <News key={index} title={news.title} description={news.description}></News>
+          <News
+            key={index}
+            title={news.title}
+            description={news.description}
+          ></News>
         ))}
       </main>
     </>
