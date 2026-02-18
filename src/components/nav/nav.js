@@ -1,18 +1,18 @@
-import './nav.css';
+import "./nav.css";
 
 export function Nav() {
+  return (
+    <nav>
+      <span>LOGO</span>
 
-
-    return (
-        <nav>
-            <span>LOGO</span>
-
-            <ul>
-                <li>DASHBOARD</li>
-                <li>NEWS</li>
-                <li>USERS</li>
-            </ul>
-        </nav>
-    )
-
+      <ul>
+        <li>DASHBOARD</li>
+        <li>NEWS</li>
+        <li>
+          {" "}
+          <i class="fa-solid fa-pizza-slice"></i> USERS
+        </li>
+      </ul>
+    </nav>
+  );
 }
