@@ -42,7 +42,9 @@ function App() {
       <h1 className="animated-title">HELLO {name}!</h1>
 
       <main>
-        { newsList.map(news => <News title={news.title} ></News>) }
+        {newsList.map((news) => (
+          <News title={news.title} description={news.description}></News>
+        ))}
       </main>
     </>
   );
