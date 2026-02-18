@@ -1,6 +1,7 @@
 /* news.css */
 
 .news {
+  position: relative;
   /* glass */
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.18);
@@ -230,4 +231,18 @@
     rgba(240, 90, 120, 0.18),
     rgba(255, 255, 255, 0.08)
   );
+}
+
+.news > span {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  background-color: blueviolet;
+  padding: 0.5rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
