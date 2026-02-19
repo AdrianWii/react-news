@@ -2,6 +2,24 @@ import { Link } from "react-router-dom";
 import "./nav.css";
 
 export function Nav() {
+  const navLinks = [
+    {
+      path: "/",
+      name: "NEWS",
+      icon: "fa-solid fa-newspaper",
+    },
+    {
+      path: "/dashboard",
+      name: "DASHBOARD",
+      icon: "fa-solid fa-gauge",
+    },
+    {
+      path: "/users",
+      name: "USERS",
+      icon: "fa-solid fa-pizza-slice",
+    },
+  ];
+
   const handleInput = (e) => {
     console.log("kliknięto: ", e.target.value);
   };
@@ -18,24 +36,16 @@ export function Nav() {
         <li>
           <input placeholder="search" onChange={handleInput}></input>
         </li>
-        <li>
-          <Link to="/dashboard">
-            <i className="fa-solid fa-gauge"></i>
-            DASHBOARD
-          </Link>
-        </li>
-        <li>
-          <Link to="/">
-            <i className="fa-solid fa-newspaper"></i>
-            NEWS
-          </Link>
-        </li>
-        <li>
-          <Link to="/users">
-            <i className="fa-solid fa-pizza-slice"></i>
-            USERS
-          </Link>
-        </li>
+        
+        {navLinks.map((link, index) => (
+          <li key={index}>
+            <Link to={link.path}>
+              <i className={link.icon}></i>
+              {link.name}
+            </Link>
+          </li>
+        ))}
+        
       </ul>
     </nav>
   );
