@@ -27,9 +27,13 @@ export function News({ title, description }) {
     }
   }, [likes]);
 
+  const createSlug = (title) => {
+    return title.replace(/\s/g, "-");
+  }
+
   return (
     <div>
-      <Link className="news" to="/news/slug">
+      <Link className="news" to={`/news/${createSlug(title)}`}>
         <h3>{title}</h3>
         <p>{description}</p>
         <span>{likes}</span>
