@@ -88,3 +88,16 @@ body.dark {
 .theme-btn:hover {
   transform: rotate(20deg) scale(1.1);
 }
+
+nav.light a > i,
+nav.light a,
+nav.light .theme-btn {
+  color: black;
+}
+
+nav.light {
+    background-color: white;
+}
+
+
+

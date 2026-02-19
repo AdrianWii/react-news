@@ -29,7 +29,7 @@ export function Nav() {
   };
 
   return (
-    <nav>
+    <nav className={theme}>
       <span>
         <a href="/">
           <i className="fa-brands fa-apple"></i>
