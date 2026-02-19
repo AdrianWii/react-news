@@ -9,7 +9,9 @@ export function Nav() {
   return (
     <nav>
       <span>
-        <i className="fa-brands fa-apple"></i>
+        <a href="/">
+          <i className="fa-brands fa-apple"></i>
+        </a>
       </span>
 
       <ul>
@@ -23,12 +25,16 @@ export function Nav() {
           </Link>
         </li>
         <li>
-          <i className="fa-solid fa-newspaper"></i>
-          NEWS
+          <Link to="/">
+            <i className="fa-solid fa-newspaper"></i>
+            NEWS
+          </Link>
         </li>
         <li>
-          <i className="fa-solid fa-pizza-slice"></i>
-          USERS
+          <Link to="/users">
+            <i className="fa-solid fa-pizza-slice"></i>
+            USERS
+          </Link>
         </li>
       </ul>
     </nav>

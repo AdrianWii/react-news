@@ -33,7 +33,15 @@ ul > li:hover {
   transform: scale(1.1);
 }
 
-span > i {
+span > a > i {
   font-size: 4rem;
   color: white;
+}
+
+
+input {
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
 }
