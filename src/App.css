@@ -95,6 +95,7 @@ div.dark {
   padding-right: 4rem;
   padding-left: 4em;
   padding-top: 120px;
+  min-height: 100vh;
 }
 
 div.light {
